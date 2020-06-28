@@ -1,0 +1,45 @@
+.certificate {
+    min-height: 100vh;
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+}
+.container__ctf {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    
+        &--image {
+            width: 30%;
+            position: absolute;
+            border-radius: 10px;
+            transition: all .8s ease-in-out;
+            outline-offset: 3px;
+            &:hover {
+                transform: translateY(-3px) scale(1.1);
+                outline: 13px solid $primary-color;
+                z-index: 20;
+            }
+            &-1 {
+                top:5rem;
+                left: 4%;
+            }
+            &-2 {
+                top:-4rem;
+                left: 25%;
+            }
+            &-3 {
+                top:5rem;
+                right: 25%;
+            }
+            &-4 {
+                top:-4rem;
+                right: 4%;
+            }
+        }
+
+        &:hover &--image:not(:hover){
+            transform: scale(0.9);
+        }
+    
+}
+.u-borderbtm-small{margin-bottom: 10rem;}

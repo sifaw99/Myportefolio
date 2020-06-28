@@ -70,6 +70,8 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color:transparent; 
+    background-size: 150% 150%;
+    animation: backgroundmoving 2s cubic-bezier(1,0,0,1) infinite;
   }
 }
 
